@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const res = await fetch('https://dev-digidaan.app.n8n.cloud/webhook-test/5be00ba4-ec08-4826-986c-3ba76949a9fc', {
+    const res = await fetch('https://dev-digidaan.app.n8n.cloud/webhook-test/87ff4dd3-c30f-4736-86d9-93ce7c24379d', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
