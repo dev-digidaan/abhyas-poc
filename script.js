@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const res = await fetch('YOUR_N8N_WEBHOOK_URL', {
+    const res = await fetch('https://dev-digidaan.app.n8n.cloud/webhook-test/5be00ba4-ec08-4826-986c-3ba76949a9fc', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ form.addEventListener('submit', async (e) => {
     if (result.output) {
       responseDiv.textContent = result.output;
     } else {
-      responseDiv.textContent = "Sorry, no response from AI.";
+      responseDiv.textContent = "Thanks! Your submission has been received.";
     }
   } catch (err) {
     responseDiv.textContent = "Error submitting form. Please try again later.";
