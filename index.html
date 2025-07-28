@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- test -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Abhyas Consulting PoC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Abhyas Consulting PoC</h1>
+  <p>Help us understand your business needs so we can provide personalized, location-specific guidance to help start or grow your business.</p>
+
+  <form id="abhyas-form">
+
+    <label>Email *</label><br/>
+    <input type="email" name="email" required /><br/><br/>
+
+    <label>Phone Number *</label><br/>
+    <input type="tel" name="phone" required /><br/><br/>
+
+    <label>Nature of business (e.g., restaurant, retail, salon, etc) *</label><br/>
+    <input type="text" name="nature" required /><br/><br/>
+
+    <label>Briefly describe what your business does or will do *</label><br/>
+    <textarea name="description" required></textarea><br/><br/>
+
+    <label>What stage is your business currently in? *</label><br/>
+    <select name="stage" required>
+      <option value="">Select...</option>
+      <option value="Idea">Idea</option>
+      <option value="Early-stage">Early-stage</option>
+      <option value="Recently Launched">Recently Launched</option>
+      <option value="Operating & Growing">Operating & Growing</option>
+      <option value="Other">Other</option>
+    </select><br/><br/>
+
+    <label>What type of incorporation is your business? *</label><br/>
+    <select name="incorporation" required>
+      <option value="">Select...</option>
+      <option value="Sole Proprietorship">Sole Proprietorship</option>
+      <option value="LLC">LLC</option>
+      <option value="Partnership">Partnership</option>
+      <option value="S-Corporation">S-Corporation</option>
+      <option value="C-Corporation">C-Corporation</option>
+      <option value="Other">Other</option>
+    </select><br/><br/>
+
+    <label>Where is/will the business be located? *</label><br/>
+    <select name="location" required>
+      <option value="">Select...</option>
+      <option value="Bellevue">Bellevue</option>
+      <option value="Redmond">Redmond</option>
+      <option value="Other">Other</option>
+    </select><br/><br/>
+
+    <label>Tell us what you're currently struggling with or looking for help on *</label><br/>
+    <textarea name="struggle" required></textarea><br/><br/>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="response" style="margin-top: 20px; font-weight: bold;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
